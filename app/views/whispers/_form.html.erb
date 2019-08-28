@@ -1,16 +1,5 @@
 <%= form_with(model: whisper, local: true) do |form| %>
-  <% if whisper.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(whisper.errors.count, "error") %> prohibited this whisper from being saved:</h2>
-
-      <ul>
-      <% whisper.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
+  
   <div class="field">
     <%= form.label :content %>
     <%= form.text_area :content %>

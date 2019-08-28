@@ -53,11 +53,11 @@ class WhispersController < ApplicationController
   end
 
   private
-    def set_whisper
-      @whisper = Whisper.find(params[:id])
-    end
+  def set_whisper
+    @whisper = Whisper.find(params[:id])
+  end
 
-    def whisper_params
-      params.require(:whisper).permit(:content)
-    end
+  def whisper_params
+    params.require(:whisper).permit(:content)
+  end
 end
