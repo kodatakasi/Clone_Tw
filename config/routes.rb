@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
   resources :whispers
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  
+  get '/', to: 'whispers#top'
+  get '/top', to: 'whispers#top'
 end

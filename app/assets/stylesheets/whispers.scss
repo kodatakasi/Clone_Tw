@@ -5,6 +5,8 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  min-height: 90vh;
+  position: relative;
 }
 
 header {
@@ -22,6 +24,20 @@ header {
   border: 1px solid #000;
   border-radius: 10px;
 }
+
+.top {
+  text-align: center;
+  height: 500px;
+  background-size: cover;
+  background-image: url(macbook1983_TP_V.jpg);
+  background-repeat: no-repeat;
+  h1 {
+    padding-top: 100px;
+    color: #fff;
+    margin: 0 0 30px 0;
+  }
+}
+
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -99,9 +115,27 @@ label {
   display: block;
 }
 
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn-square:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
 footer {
   height: 50px;
   background-color: #00acee;
   color: #fff;
   text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }

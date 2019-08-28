@@ -1,6 +1,9 @@
 class WhispersController < ApplicationController
   before_action :set_whisper, only: [:show, :edit, :update, :destroy]
 
+  def top
+  end
+  
   def index
     @whispers = Whisper.all
   end
