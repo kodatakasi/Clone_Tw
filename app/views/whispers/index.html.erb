@@ -12,17 +12,6 @@
 
   <tbody>
     <% @whispers.each do |whisper| %>
-    <% if @whisper.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= @whisper.errors.count %>件のエラーがあります。</h2>
-        <ul>
-
-        <% @whisper.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-              </ul>
-      </div>
-     <% end %>
       <tr>
         <td><%= whisper.content %></td>
         <td><%= link_to 'Show', whisper %></td>
