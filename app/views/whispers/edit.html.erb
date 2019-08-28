@@ -1,6 +1,10 @@
-<h1>Editing Whisper</h1>
+<%= render 'header' %>
+
+<h1>編集</h1>
 
 <%= render 'form', whisper: @whisper %>
 
-<%= link_to 'Show', @whisper %> |
-<%= link_to 'Back', whispers_path %>
+<%= link_to 'つぶやき', @whisper %> |
+<%= link_to '戻る', whispers_path %>
+
+<%= render 'footer' %>

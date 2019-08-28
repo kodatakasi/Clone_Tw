@@ -1,5 +1,9 @@
-<h1>New Whisper</h1>
+<%= render 'header' %>
+
+<h1>つぶやく</h1>
 
 <%= render 'form', whisper: @whisper %>
 
-<%= link_to 'Back', whispers_path %>
+<%= link_to '戻る', whispers_path %>
+
+<%= render 'footer' %>

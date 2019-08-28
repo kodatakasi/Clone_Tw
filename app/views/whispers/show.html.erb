@@ -1,9 +1,13 @@
 <p id="notice"><%= notice %></p>
 
+<%= render 'header' %>
+
 <p>
-  <strong>Content:</strong>
+  <strong>内容:</strong>
   <%= @whisper.content %>
 </p>
 
-<%= link_to 'Edit', edit_whisper_path(@whisper) %> |
-<%= link_to 'Back', whispers_path %>
+<%= link_to '編集', edit_whisper_path(@whisper) %> |
+<%= link_to '戻る', whispers_path %>
+
+<%= render 'footer' %>
