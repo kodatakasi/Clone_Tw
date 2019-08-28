@@ -1,28 +1,20 @@
 class WhispersController < ApplicationController
   before_action :set_whisper, only: [:show, :edit, :update, :destroy]
 
-  # GET /whispers
-  # GET /whispers.json
   def index
     @whispers = Whisper.all
   end
 
-  # GET /whispers/1
-  # GET /whispers/1.json
   def show
   end
 
-  # GET /whispers/new
   def new
     @whisper = Whisper.new
   end
 
-  # GET /whispers/1/edit
   def edit
   end
 
-  # POST /whispers
-  # POST /whispers.json
   def create
     @whisper = Whisper.new(whisper_params)
 
@@ -37,8 +29,6 @@ class WhispersController < ApplicationController
     end
   end
 
-  # PATCH/PUT /whispers/1
-  # PATCH/PUT /whispers/1.json
   def update
     respond_to do |format|
       if @whisper.update(whisper_params)
@@ -51,8 +41,6 @@ class WhispersController < ApplicationController
     end
   end
 
-  # DELETE /whispers/1
-  # DELETE /whispers/1.json
   def destroy
     @whisper.destroy
     respond_to do |format|
@@ -62,12 +50,10 @@ class WhispersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_whisper
       @whisper = Whisper.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def whisper_params
       params.require(:whisper).permit(:content)
     end
